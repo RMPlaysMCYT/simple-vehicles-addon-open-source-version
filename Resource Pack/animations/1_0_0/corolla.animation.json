@@ -1,0 +1,50 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.car4x4_1.scale": {
+			"loop": true
+		},
+		"animation.corolla.move": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"leg0": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							360,
+							0,
+							0
+						]
+					}
+				},
+				"leg1": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							360,
+							0,
+							0
+						]
+					}
+				}
+			},
+			"particle_effects": {
+				"0.0": {
+					"effect": ""
+				},
+				"1.0": {
+					"effect": "minecraft:arrow_spell_emitter"
+				}
+			}
+		}
+	}
+}

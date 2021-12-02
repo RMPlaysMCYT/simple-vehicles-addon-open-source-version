@@ -1,0 +1,67 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.helicopter.loop": {
+			"loop": true,
+			"animation_length": 2,
+			"bones": {
+				"propeller": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"2.0": [
+							0,
+							"360*8",
+							0
+						]
+					}
+				},
+				"propeller2": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"2.0": [
+							"360*8",
+							0,
+							0
+						]
+					}
+				},
+				"propeller1": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"2.0": [
+							"360*4",
+							0,
+							0
+						]
+					}
+				},
+				"propeller0": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"2.0": [
+							"-this",
+							"360*4",
+							"-this"
+						]
+					}
+				}
+			}
+		}
+	}
+}

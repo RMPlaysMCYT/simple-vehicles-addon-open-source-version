@@ -1,0 +1,40 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.firetruck.move": {
+			"loop": true,
+			"animation_length": 1,
+			"anim_time_update": "query.modified_distance_moved",
+			"bones": {
+				"leg0": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							360,
+							0,
+							0
+						]
+					}
+				},
+				"leg1": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							360,
+							0,
+							0
+						]
+					}
+				}
+			}
+		}
+	}
+}
