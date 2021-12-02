@@ -1,14 +1,15 @@
 {
-	"format_version": "1.13.0",
+	"format_version": "1.13.0", ////Change it if you wanted but make sure it will be qualified
 	"minecraft:entity": {
 		"description": {
-			"identifier": "simple_vehicles:ae86",
+			"identifier": "svaos:ae86", ////Name of the Identifier just add svaos:[name_of_your_vehicle]
 			"is_spawnable": true,
 			"is_summonable": true,
 			"is_experimental": false
 		},
 		"component_groups": {
 			"minecraft:corolla": {
+				////In component_groups you can modify and add your own idea
 				"minecraft:is_tamed": {},
 				"minecraft:equippable": {
 					"slots": [
