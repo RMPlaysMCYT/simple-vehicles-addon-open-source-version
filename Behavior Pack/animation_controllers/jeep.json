@@ -1,0 +1,33 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.jeep.ride": {
+      "inital_state": "default",
+      "states": {
+        "default": {
+          "transitions":[
+            {
+              "show_scoreboard": "(1.0)"
+            }
+          ]
+        },
+        "show_scoreboard": {
+          "transitions":[
+            {
+              "default": "query.has_rider"
+            }
+          ],
+          "on_entry":[
+            "titleraw @s[tag=gas] actionbar {"rawtext":[{"text":"§a    == §7"},{"translate":"oil"},{"text":" "},{"score":{"name":"@s","objective":"gas_tank"}},{"text":"L §6"},{"translate":"dur"},{"text":" "},{"score":{"name":"@e[r=5,c=1,tag=car]","objective":"durability"}},{"text":"%"}]}",
+            "tag @s add gas",
+            "tag @s add car"
+            "scoreboard objectives add gas_tank dummy",
+            "scoreboard objectives add battery dummy",
+            "scoreboard players set gas_tank 10000",
+            "scoreboard players set battery 10000"
+          ]
+        }
+      }
+    }
+  }
+}
