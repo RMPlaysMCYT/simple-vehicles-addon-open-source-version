@@ -7,9 +7,8 @@ pack.with_watermark.name=With Watermark - 100% Recommended even for using this v
 entity.svaos:ae86.name=Toyota AE86 
 entity.svaos:ambulance.name=Ambulance
 
-item.spawn_egg.entity.simple_vehicles:ford_mustang.name=Ford Mustang
-item.spawn_egg.entity.simple_vehicles:corolla.name=Toyota Corolla 
+item.spawn_egg.entity.svaos:ae86.name=Toyota AE86 
+item.spawn_egg.entity.svaos:ambulance.name=Ambulance
 
-action.hint.exit.simple_vehicles:scooter=Use saddle to drive and jump to exit
-action.hint.exit.simple_vehicles:double_deck_bus=Use saddle to drive and jump to exit
-action.hint.shoot.simple_vehicles:tank=Fire!!
+action.hint.exit.svaos:ae86=Use saddle to drive and jump to exit
+action.hint.exit.svaos:ambulance=Use saddle to drive and jump to exit
