@@ -308,7 +308,7 @@
 										"test": "has_equipment",
 										"subject": "other",
 										"domain": "hand",
-										"value": "rmplaysmcyt:key"
+										"value": "minecraft:saddle"
 									}
 								]
 							},
@@ -325,7 +325,7 @@
 										"test": "has_equipment",
 										"subject": "other",
 										"domain": "hand",
-										"value": "rmplaysmcyt:key"
+										"value": "minecraft:saddle"
 									},
 									{
 										"test": "is_family",
