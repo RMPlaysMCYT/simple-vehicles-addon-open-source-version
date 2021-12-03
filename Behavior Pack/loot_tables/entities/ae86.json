@@ -5,7 +5,7 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "simple_vehicles:ae86_spawn_egg",
+					"name": "svaos:ae86_spawn_egg",
 					"weight": 1,
 					"functions": [
 						{
