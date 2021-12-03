@@ -1,0 +1,63 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "rmplaysmcyt:car_1",
+			"materials": {
+				"default": "witch"
+			},
+			"geometry": {
+				"default": "geometry.car"
+			},
+			"textures": {
+				"black": "textures/entity/car",
+				"white": "textures/entity/car/car_white",
+				"orange": "textures/entity/car/car_naranja",
+				"magenta": "textures/entity/car/car_magenta",
+				"light_blue": "textures/entity/car/car_light_blue",
+				"yellow": "textures/entity/car/car_yellow",
+				"lime": "textures/entity/car/car_lime",
+				"pink": "textures/entity/car/car_pink",
+				"gray": "textures/entity/car/car_grey",
+				"silver": "textures/entity/car/car_silver",
+				"cyan": "textures/entity/car/car_cyan",
+				"purple": "textures/entity/car/car_purple",
+				"blue": "textures/entity/car/car_blue",
+				"brown": "textures/entity/car/car_cafe",
+				"green": "textures/entity/car/car_green",
+				"red": "textures/entity/car/car_red"
+			},
+			"spawn_egg": {
+				"texture": "car",
+				"texture_index": 0
+			},			
+			"animations": {
+				"door_close": "animation.car.door_close",
+				"vehicle_door": "animation.car.vehicle_door",
+				"open": "animation.car.door_open",
+				"move": "animation.car.move",
+				"look_at_target_car": "animation.car.look_at_target"
+			},
+			"scripts": {
+				"animate": [
+					{ 
+						"move": "query.modified_move_speed"
+					},
+					{
+						"open": "query.mark_variant == 1"
+					},
+					"look_at_target_car",
+					{
+						"door_close": "query.mark_variant == 2"
+					},
+					{
+						"vehicle_door": "query.has_rider"
+					}
+				]
+			},
+			"render_controllers": [
+				"controller.render.simple_car"
+			]
+		}
+	}
+}
