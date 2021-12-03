@@ -1,0 +1,36 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "svaos:ambulance",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/entity/ambulance"
+			},
+			"geometry": {
+				"default": "geometry.ambulance"
+			},
+			"spawn_egg": {
+				"texture": "ambulance",
+				"texture_index": 0
+			},
+			"animations": {
+				"move": "animation.ambulance.move",
+				"turn": "animation.ambulance.turn"
+			},
+			"animation_controllers": [
+				{
+					"move": "controller.animation.vehicles.move"
+				},
+				{
+					"turn": "controller.animation.vehicle.v_turn"
+				}
+			],
+			"render_controllers": [
+				"controller.render.ambulance"
+			]
+		}
+	}
+}
