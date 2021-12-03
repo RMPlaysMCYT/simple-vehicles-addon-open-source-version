@@ -1,7 +1,7 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-				"animation.svaos_car.door_open": {
+		"animation.svaos_car.door_open": {
 			"loop": "hold_on_last_frame",
 			"animation_length": 1,
 			"bones": {
@@ -81,129 +81,6 @@
 				},
 				"wheel0B": {
 					"rotation": [0, "math.max(-26,math.min(26,query.yaw_speed*0.5))", 0]
-				}
-			}
-		},
-		"animation.svaos_car.vehicle_door": {
-			"loop": true,
-			"bones": {
-				"door2": {
-					"rotation": {
-						"0.0": {
-							"post": [0, 55, 0],
-							"lerp_mode": "catmullrom"
-						}
-					}
-				},
-				"door3": {
-					"rotation": {
-						"0.0": {
-							"post": [0, -55, 0],
-							"lerp_mode": "catmullrom"
-						}
-					}
-				},
-				"door1": {
-					"rotation": {
-						"0.0": {
-							"post": [0, 55, 0],
-							"lerp_mode": "catmullrom"
-						}
-					}
-				},
-				"door0": {
-					"rotation": {
-						"0.0": {
-							"post": [0, -55, 0],
-							"lerp_mode": "catmullrom"
-						}
-					}
-				}
-			}
-		},
-		"animation.svaos_car.door_close": {
-			"loop": "hold_on_last_frame",
-			"animation_length": 1,
-			"bones": {
-				"door2": {
-					"rotation": {
-						"0.0": {
-							"post": [0, -60, 0],
-							"lerp_mode": "catmullrom"
-						},
-						"1.0": {
-							"post": [0, 0, 0],
-							"lerp_mode": "catmullrom"
-						}
-					}
-				},
-				"door3": {
-					"rotation": {
-						"0.0": {
-							"post": [0, 60, 0],
-							"lerp_mode": "catmullrom"
-						},
-						"1.0": {
-							"post": [0, 0, 0],
-							"lerp_mode": "catmullrom"
-						}
-					}
-				},
-				"door1": {
-					"rotation": {
-						"0.0": {
-							"post": [0, -60, 0],
-							"lerp_mode": "catmullrom"
-						},
-						"1.0": {
-							"post": [0, 2.5, 0],
-							"lerp_mode": "catmullrom"
-						}
-					}
-				},
-				"door0": {
-					"rotation": {
-						"0.0": {
-							"post": [0, 60, 0],
-							"lerp_mode": "catmullrom"
-						},
-						"1.0": {
-							"post": [0, 0, 0],
-							"lerp_mode": "catmullrom"
-						}
-					}
-				}
-			}
-		},
-		"animation.svaos_car.wipe": {
-			"loop": true,
-			"animation_length": 1,
-			"bones": {
-				"wiper2": {
-					"rotation": {
-						"0.0": [0, 0, 0],
-						"0.12": [11.93, 21.3, 28.13],
-						"0.2": [23.86, 34.6, 56.26],
-						"0.36": [33.41, 38.64, 78.77],
-						"0.52": [42.98161, 37.25176, 110.89472],
-						"0.64": [33.41, 38.64, 78.77],
-						"0.76": [23.86, 34.6, 56.26],
-						"0.88": [11.93, 21.3, 28.13],
-						"1.0": [0, 0, 0]
-					}
-				},
-				"wiper": {
-					"rotation": {
-						"0.0": [0, 0, 0],
-						"0.12": [11.93, 21.3, 28.13],
-						"0.2": [23.86, 34.6, 56.26],
-						"0.36": [33.41, 38.64, 78.77],
-						"0.52": [42.98161, 37.25176, 110.89472],
-						"0.64": [33.41, 38.64, 78.77],
-						"0.76": [23.86, 34.6, 56.26],
-						"0.88": [11.93, 21.3, 28.13],
-						"1.0": [0, 0, 0]
-					}
 				}
 			}
 		},
@@ -377,6 +254,105 @@
 							"post": [0, 0, 0],
 							"lerp_mode": "catmullrom"
 						}
+					}
+				}
+			}
+		},
+		"animation.svaos_car.vehicle_door": {
+			"loop": true,
+			"bones": {
+				"door2": {
+					"rotation": {
+						"0.0": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"door3": {
+					"rotation": {
+						"0.0": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"door1": {
+					"rotation": {
+						"0.0": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"door0": {
+					"rotation": {
+						"0.0": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				}
+			}
+		},
+		"animation.svaos_car.door_close": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door2": {
+					"rotation": {
+						"0.0": [0, -60, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door3": {
+					"rotation": {
+						"0.0": [0, 60, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door1": {
+					"rotation": {
+						"0.0": [0, -60, 0],
+						"1.0": [0, 2.5, 0]
+					}
+				},
+				"door0": {
+					"rotation": {
+						"0.0": [0, 60, 0],
+						"1.0": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.svaos_car.wipe": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"wiper2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.12": [11.93, 21.3, 28.13],
+						"0.2": [23.86, 34.6, 56.26],
+						"0.36": [33.41, 38.64, 78.77],
+						"0.52": [42.98161, 37.25176, 110.89472],
+						"0.64": [33.41, 38.64, 78.77],
+						"0.76": [23.86, 34.6, 56.26],
+						"0.88": [11.93, 21.3, 28.13],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"wiper": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.12": [11.93, 21.3, 28.13],
+						"0.2": [23.86, 34.6, 56.26],
+						"0.36": [33.41, 38.64, 78.77],
+						"0.52": [42.98161, 37.25176, 110.89472],
+						"0.64": [33.41, 38.64, 78.77],
+						"0.76": [23.86, 34.6, 56.26],
+						"0.88": [11.93, 21.3, 28.13],
+						"1.0": [0, 0, 0]
 					}
 				}
 			}
