@@ -15,9 +15,9 @@
 					"slots": [
 						{
 							"slot": 0,
-							"item": "simple_vehicles:key",
+							"item": "minecraft:saddle",
 							"accepted_items": [
-								"simple_vehicles:key"
+								"minecraft:saddle"
 							],
 							"on_equip": {
 								"event": "minecraft:donkey_saddled"
