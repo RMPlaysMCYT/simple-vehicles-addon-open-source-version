@@ -11,6 +11,11 @@
 			"textures":[
 				"textures/items/ambulance"
 			]
+		},
+		"sample":{
+			"textures": [
+				"textures/items/sample"
+			]
 		}
 	}
 }
