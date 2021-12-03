@@ -35,7 +35,7 @@
 											"test": "has_equipment",
 											"subject": "other",
 											"domain": "hand",
-											"value": "rmplaysmcyt:key"
+											"value": "minecraft:saddle"
 										}
 									]
 								},
@@ -114,7 +114,7 @@
 											"test": "has_equipment",
 											"subject": "other",
 											"domain": "hand",
-											"value": "rmplaysmcyt:key"
+											"value": "minecraft:saddle"
 										},
 										{
 											"test": "is_family",
@@ -233,9 +233,9 @@
 				"slots": [
 					{
 						"slot": 0,
-						"item": "rmplaysmcyt:key",
+						"item": "minecraft:saddle",
 						"accepted_items": [
-							"rmplaysmcyt:key"
+							"minecraft:saddle"
 						],
 						"on_equip": {
 							"event": "minecraft:horse_saddled"
