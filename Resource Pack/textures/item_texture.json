@@ -4,22 +4,22 @@
 	"texture_data": {
 		"ae86": {
 			"textures": [
-				"textures/items/ae86"
+				"textures/items/svaos_ae86"
 			]
 		},
 		"ambulance": {
 			"textures":[
-				"textures/items/ambulance"
+				"textures/items/svaos_ambulance"
 			]
 		},
 		"sample":{
 			"textures": [
-				"textures/items/sample"
+				"textures/items/svaos_sample"
 			]
 		},
 		"car":{
 			"textures": [
-				"textures/items/car"
+				"textures/items/svaos_car"
 			]
 		}
 	}
