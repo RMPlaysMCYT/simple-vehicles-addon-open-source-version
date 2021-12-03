@@ -2,7 +2,7 @@
 	"format_version": "1.13.0",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "rmplaysmcyt:car_1",
+			"identifier": "svaos:car",
 			"is_spawnable": true,
 			"is_summonable": true,
 			"is_experimental": false
