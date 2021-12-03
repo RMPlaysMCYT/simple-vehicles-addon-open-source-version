@@ -1,10 +1,15 @@
 {
-	"resource_pack_name": "simple_vehicles",
+	"resource_pack_name": "svaos",
 	"texture_name": "atlas.items",
 	"texture_data": {
 		"ae86": {
 			"textures": [
 				"textures/items/ae86"
+			]
+		},
+		"ambulance": {
+			"textures":[
+				"textures/items/ambulance"
 			]
 		}
 	}
