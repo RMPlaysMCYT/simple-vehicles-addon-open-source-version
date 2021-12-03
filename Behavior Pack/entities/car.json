@@ -2,7 +2,7 @@
 	"format_version": "1.13.0",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "svaos:car",
+			"identifier": "svaos:car_with_colors",
 			"is_spawnable": true,
 			"is_summonable": true,
 			"is_experimental": false
