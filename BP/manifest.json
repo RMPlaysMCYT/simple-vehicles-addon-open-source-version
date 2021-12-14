@@ -1,0 +1,54 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "Simple Vehicles Addon Open-source Version 1.0.0 Pack 1 [Behavior Pack]",
+		"description": "This addon add lots of vehicles in minecraft created by RMPlaysMC YT and the community",
+		"version": [
+			1,
+			0,
+			0
+		],
+		"uuid": "096839ca-21c6-4334-81c6-64b40802e1fc",
+		"min_engine_version": [
+			1,
+			16,
+			100
+		]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "e4fac9ca-4ce1-466d-9efd-00f7aee30921",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"version": [
+				1,
+				0,
+				0
+			],
+			"uuid": "2042f565-dffd-443c-883e-35ca05c90699"
+		}
+	],
+	"metadata": {
+		"authors": [
+			"RMPlaysMC YT"
+		],
+		"license": "GPL-3.0 License",
+		"generated_with": {
+			"bridge": [
+				"2.1.1",
+				"2.1.2",
+				"1.8.3",
+				"2.1.5",
+				"1.8.4"
+			]
+		}
+	}
+}

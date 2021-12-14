@@ -1,0 +1,179 @@
+{
+	"format_version": "1.13.0", ////Change it if you wanted but make sure it will be qualified
+	"minecraft:entity": {
+		"description": {
+			"identifier": "svaos:ae86", ////Name of the Identifier just add svaos:[name_of_your_vehicle]
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"minecraft:corolla": {
+				////In component_groups you can modify and add your own idea
+				"minecraft:is_tamed": {},
+				"minecraft:equippable": {
+					"slots": [
+						{
+							"slot": 0,
+							"item": "minecraft:saddle",
+							"accepted_items": [
+								"minecraft:saddle"
+							],
+							"on_equip": {
+								"event": "minecraft:donkey_saddled"
+							},
+							"on_unequip": {
+								"event": "minecraft:donkey_unsaddled"
+							}
+						}
+					]
+				},
+				"minecraft:rideable": {
+					"seat_count": 2,
+					"crouching_skip_interact": true,
+					"family_types": [
+						"player"
+					],
+					"interact_text": "Drive",
+					"seats": [
+						{
+							"position": [
+								0.52,
+								0.32,
+								0
+							]
+						},
+						{
+							"position": [
+								-0.52,
+								0.32,
+								0
+							]
+						}
+					]
+				}
+			},
+			"minecraft:donkey_saddled": {
+				"minecraft:is_saddled": {},
+				"minecraft:input_ground_controlled": {},
+				"minecraft:can_power_jump": {}
+			}
+		},
+		"components": {
+			"minecraft:experience_reward": {
+				"on_death": "math.min(query.player_level*7,100)"
+			},
+			"minecraft:scale": {
+				"value": 1.1
+			},
+			"minecraft:type_family": {
+				"family": [
+					"aspire",
+					"ae86"
+				]
+			},
+			"minecraft:collision_box": {
+				"width": 2,
+				"height": 2
+			},
+			"minecraft:health": {
+				"value": {
+					"range_min": 15,
+					"range_max": 30
+				}
+			},
+			"minecraft:hurt_on_condition": {
+				"damage_conditions": [
+					{
+						"filters": {
+							"test": "in_lava",
+							"subject": "self",
+							"operator": "==",
+							"value": true
+						},
+						"cause": "lava",
+						"damage_per_tick": 4
+					}
+				]
+			},
+			"minecraft:inventory": {
+				"inventory_size": 16,
+				"container_type": "horse"
+			},
+			"minecraft:movement": {
+				"value": 0.175
+			},
+			"minecraft:navigation.walk": {
+				"can_path_over_water": true,
+				"avoid_damage_blocks": true
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:jump.static": {},
+			"minecraft:nameable": {},
+			"minecraft:horse.jump_strength": {
+				"value": 0
+			},
+			"minecraft:leashable": {
+				"soft_distance": 4,
+				"hard_distance": 6,
+				"max_distance": 10
+			},
+			"minecraft:balloonable": {},
+			"minecraft:behavior.float": {
+				"priority": 0
+			},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:loot": {
+				"table": "loot_tables/entities/ae86.json"
+			},
+			"minecraft:healable": {
+				"items": [
+					{
+						"item": "minecraft:iron_ingot",
+						"heal_amount": 100,
+						"effects": [
+							{
+								"name": "absorption",
+								"chance": 0.8,
+								"duration": 5,
+								"amplifier": 5
+							}
+						]
+					}
+				]
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"randomize": [
+					{
+						"weight": 80,
+						"add": {
+							"component_groups": [
+								"minecraft:corolla"
+							]
+						}
+					}
+				]
+			},
+			"minecraft:donkey_saddled": {
+				"add": {
+					"component_groups": [
+						"minecraft:donkey_saddled"
+					]
+				}
+			},
+			"minecraft:donkey_unsaddled": {
+				"remove": {
+					"component_groups": [
+						"minecraft:donkey_saddled"
+					]
+				}
+			}
+		}
+	}
+}

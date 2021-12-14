@@ -1,0 +1,44 @@
+{
+	"type": "minecraftBedrock",
+	"packs": {
+		"behaviorPack": "./BP",
+		"resourcePack": "./RP"
+	},
+	"bridge": {
+		"v1CompatMode": true
+	},
+	"namespace": "svaos",
+	"targetVersion": "1.16.100",
+	"name": "Simple Vehicles Addon Open Source Version",
+	"description": "This addon add lots of vehicles in minecraft created by RMPlaysMC YT and the community",
+	"authors": [
+		"RMPlaysMC YT"
+	],
+	"experimentalGameplay": {
+		"additionalModdingCapabilities": true,
+		"creationOfCustomBiomes": true,
+		"experimentalMolangFeatures": true,
+		"holidayCreatorFeatures": true,
+		"upcomingCreatorFeatures": true,
+		"cavesAndCliffs": false,
+		"educationEdition": false,
+		"enableGameTestFramework": false
+	},
+	"compiler": {
+		"plugins": [
+			"typeScript",
+			"entityIdentifierAlias",
+			"customEntityComponents",
+			"customItemComponents",
+			"customBlockComponents",
+			"customCommands",
+			"moLang",
+			[
+				"simpleRewrite",
+				{
+					"packName": "Simple Vehicles Addon Open-source Version"
+				}
+			]
+		]
+	}
+}

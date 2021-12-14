@@ -1,0 +1,14 @@
+{
+    "format_version": "1.10.0",
+    "animations": {
+        "animation.sample":{
+            "animation_length": 0,
+            "loop": true,
+            "timeline": {
+                "0":[
+                    "/summon minecraft:armor_stand sample"
+                ]
+            }
+        }
+    }
+}

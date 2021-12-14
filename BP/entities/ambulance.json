@@ -1,0 +1,215 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "svaos:ambulance",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"minecraft:minecar": {
+				"minecraft:is_tamed": {},
+				"minecraft:rideable": {
+					"seat_count": 3,
+					"crouching_skip_interact": false,
+					"family_types": [
+						"player",
+						"villager",
+						"cat",
+						"human",
+						"npc"
+					],
+					"interact_text": "Drive",
+					"pull_in_entities": true,
+					"seats": [
+						{
+							"position": [
+								0.7,
+								0.75,
+								1.3
+							]
+						},
+						{
+							"position": [
+								-0.7,
+								0.75,
+								1.3
+							]
+						},
+						{
+							"position": [
+								0.1,
+								1.2,
+								-1.32
+							]
+						}
+					]
+				}
+			},
+			"minecraft:bugfixer": {
+				"minecraft:timer": {
+					"time": [
+						0.1,
+						0.1
+					],
+					"looping": false,
+					"time_down_event": {
+						"event": "minecraft:bugfix",
+						"target": "self"
+					}
+				}
+			},
+			"minecraft:horse_saddled": {
+				"minecraft:input_ground_controlled": {},
+				"minecraft:can_power_jump": {},
+				"minecraft:behavior.player_ride_tamed": {}
+			}
+		},
+		"components": {
+			"minecraft:experience_reward": {
+				"on_death": "math.min(query.player_level*7,100)"
+			},
+			"minecraft:scale": {
+				"value": 1
+			},
+			"minecraft:equippable": {
+				"slots": [
+					{
+						"slot": 0,
+						"item": "minecraft:saddle",
+						"accepted_items": [
+							"minecraft:saddle"
+						],
+						"on_equip": {
+							"event": "minecraft:horse_saddled"
+						},
+						"on_unequip": {
+							"event": "minecraft:horse_unsaddled"
+						}
+					}
+				]
+			},
+			"minecraft:type_family": {
+				"family": [
+					"aspire",
+					"ambulance"
+				]
+			},
+			"minecraft:horse.jump_strength": {
+				"value": 0
+			},
+			"minecraft:breathable": {
+				"totalSupply": 10,
+				"suffocateTime": 0
+			},
+			"minecraft:is_chested": {},
+			"minecraft:loot": {
+				"table": "loot_tables/entities/ambulance.json"
+			},
+			"minecraft:collision_box": {
+				"width": 2,
+				"height": 2
+			},
+			"minecraft:health": {
+				"value": {
+					"range_min": 120,
+					"range_max": 120
+				}
+			},
+			"minecraft:inventory": {
+				"inventory_size": 15,
+				"container_type": "horse",
+				"private": false
+			},
+			"minecraft:movement": {
+				"value": {
+					"range_min": 0.2,
+					"range_max": 0.22
+				}
+			},
+			"minecraft:physics": {
+				"has_gravity": true
+			},
+			"minecraft:fire_immune": true,
+			"minecraft:knockback_resistance": {
+				"value": 100,
+				"max": 100
+			},
+			"minecraft:navigation.walk": {
+				"avoid_water": false
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:jump.static": {},
+			"minecraft:walk_animation_speed": {
+				"value": 20
+			},
+			"minecraft:push_through": {
+				"value": 1
+			},
+			"minecraft:nameable": {},
+			"minecraft:healable": {
+				"items": [
+					{
+						"item": "rmplaysmc:wrench",
+						"heal_amount": 100,
+						"effects": [
+							{
+								"name": "absorption",
+								"chance": 0.8,
+								"duration": 5,
+								"amplifier": 5
+							}
+						]
+					}
+				],
+				"force_use": true
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"randomize": [
+					{
+						"weight": 100,
+						"add": {
+							"component_groups": [
+								"minecraft:minecar"
+							]
+						}
+					}
+				]
+			},
+			"minecraft:horse_saddled": {
+				"add": {
+					"component_groups": [
+						"minecraft:horse_saddled"
+					]
+				}
+			},
+			"minecraft:horse_unsaddled": {
+				"add": {
+					"component_groups": [
+						"minecraft:bugfixer"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"minecraft:horse_saddled"
+					]
+				}
+			},
+			"minecraft:bugfix": {
+				"add": {
+					"component_groups": [
+						"minecraft:minecar"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"minecraft:bugfixer"
+					]
+				}
+			}
+		}
+	}
+}
