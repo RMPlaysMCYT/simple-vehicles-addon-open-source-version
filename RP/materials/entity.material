@@ -1,0 +1,47 @@
+{
+	"materials": {	
+		"version": "1.0.0",
+		"glow:entity_emissive_alpha": {},
+		"glow_glass_blender:entity_emissive_alpha": {
+			"+defines": [ 
+				"USE_ONLY_EMISSIVE"
+			]
+		},
+		"translucence:entity_alphatest": {},
+		"glass:entity": {
+			"+states": [ 
+				"Blending"
+			]
+		},
+		"charged:charged_creeper": {
+			"+states": [ 
+				"Blending", 
+				"DisableCulling"
+			]
+		},
+		"glint:entity_alphatest_glint": {},
+		"cars:entity_alphatest_glint": {},
+		"aspire:entity_alphatest": {},
+		"rmplayspe:entity_alphatest": {},
+		"sdlmido_16:entity_alphatest": {},
+		"nicz_003:entity_alphatest": {},
+		"chrislynne:entity_alphatest":{},	
+		"gen_mcpe_123:entity_alphatest":{},	
+		"lightning_x:entity_alphatest":{},	
+		"thunder_x:entity_alphatest":{},	
+		"vehicles:entity_alphatest": {},
+		"biplane:entity_alphatest": {},
+		"fantasy:entity_alphatest": {},
+		"magicraft:entity_alphatest": {},
+		"system:entity_alphatest": {},	
+		"vehicles:entity_alphatest": {},
+		"aspire:entity_alphatest": {},
+		"entity_emissive:entity": {
+			"+defines": [ "USE_EMISSIVE" ]
+		},
+		"spider:entity_emissive_alpha": {},
+		"spider_invisible:entity_emissive_alpha": {
+			"+defines": [ "USE_ONLY_EMISSIVE" ]
+		}	
+	}
+}
