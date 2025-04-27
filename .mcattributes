@@ -1,3 +1,6 @@
 
 diagnostic.disable.behaviorpack.item.components.deprecated=true
 diagnostic.disable.minecraft.manifest.module.missing=true
+diagnostic.disable.behaviorpack.block.duplicate_id=true
+diagnostic.disable.behaviorpack.item.components.deprecated=true
+diagnostic.disable.behaviorpack.block.duplicate_id=true
