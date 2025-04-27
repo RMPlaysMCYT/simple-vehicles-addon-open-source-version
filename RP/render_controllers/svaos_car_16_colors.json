@@ -1,7 +1,7 @@
 {
 	"format_version": "1.8.0",
 	"render_controllers": {
-		"controller.render.svaos_car_16_colors": {
+		"controller.render.svea_oss_car_16_colors": {
 			"arrays": {
 				"textures": {
 					"Array.skins": [

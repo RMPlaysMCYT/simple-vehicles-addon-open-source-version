@@ -5,7 +5,7 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "svea_oss:ambulance_spawn_egg",
+					"name": "svea_oss:car_spawn_egg",
 					"weight": 1,
 					"functions": [
 						{

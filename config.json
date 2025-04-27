@@ -7,7 +7,7 @@
 	"bridge": {
 		"v1CompatMode": true
 	},
-	"namespace": "svaos",
+	"namespace": "svea_osss",
 	"targetVersion": "1.16.100",
 	"name": "Simple Vehicles Addon Open Source Version",
 	"description": "This addon add lots of vehicles in minecraft created by RMPlaysMC YT and the community",

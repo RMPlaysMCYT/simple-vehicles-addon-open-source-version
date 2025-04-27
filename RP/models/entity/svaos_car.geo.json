@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.svaos_car",
+				"identifier": "geometry.svea_oss_car",
 				"texture_width": 512,
 				"texture_height": 512,
 				"visible_bounds_width": 11,

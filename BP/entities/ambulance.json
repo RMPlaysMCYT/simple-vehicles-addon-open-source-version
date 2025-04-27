@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "svaos:ambulance",
+			"identifier": "svea_oss:ambulance",
 			"is_spawnable": true,
 			"is_summonable": true,
 			"is_experimental": false
@@ -17,7 +17,6 @@
 						"player",
 						"villager",
 						"cat",
-						"human",
 						"npc"
 					],
 					"interact_text": "Drive",
@@ -100,8 +99,7 @@
 				"value": 0
 			},
 			"minecraft:breathable": {
-				"totalSupply": 10,
-				"suffocateTime": 0
+				"total_supply": 15
 			},
 			"minecraft:is_chested": {},
 			"minecraft:loot": {
@@ -131,7 +129,6 @@
 			"minecraft:physics": {
 				"has_gravity": true
 			},
-			"minecraft:fire_immune": true,
 			"minecraft:knockback_resistance": {
 				"value": 100,
 				"max": 100
@@ -151,7 +148,7 @@
 			"minecraft:healable": {
 				"items": [
 					{
-						"item": "rmplaysmc:wrench",
+						"item": "svea_oss:wrench",
 						"heal_amount": 100,
 						"effects": [
 							{

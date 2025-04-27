@@ -2,7 +2,7 @@
 	"format_version": "1.13.0", ////Change it if you wanted but make sure it will be qualified
 	"minecraft:entity": {
 		"description": {
-			"identifier": "svaos:ae86", ////Name of the Identifier just add svaos:[name_of_your_vehicle]
+			"identifier": "svea_oss:ae86", ////Name of the Identifier just add svea_oss:[name_of_your_vehicle]
 			"is_spawnable": true,
 			"is_summonable": true,
 			"is_experimental": false

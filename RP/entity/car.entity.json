@@ -2,42 +2,42 @@
 	"format_version": "1.10.0",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "svaos:car_with_colors",
+			"identifier": "svea_oss:car_with_colors",
 			"materials": {
 				"default": "witch"
 			},
 			"geometry": {
-				"default": "geometry.svaos_car"
+				"default": "geometry.svea_oss_car"
 			},
 			"textures": {
-				"black": "textures/entity/svaos_car/svaos_car_black",
-				"white": "textures/entity/svaos_car/svaos_car_white",
-				"orange": "textures/entity/svaos_car/svaos_car_naranja",
-				"magenta": "textures/entity/svaos_car/svaos_car_magenta",
-				"light_blue": "textures/entity/svaoscar_/svaos_car_light_blue",
-				"yellow": "textures/entity/svaos_car/svaos_car_yellow",
-				"lime": "textures/entity/svaos_car/svaos_car_lime",
-				"pink": "textures/entity/svaos_car/svaos_car_pink",
-				"gray": "textures/entity/svaos_car/svaos_car_grey",
-				"silver": "textures/entity/svaos_car/svaos_car_light_gray",
-				"cyan": "textures/entity/svaos_car/svaos_car_cyan",
-				"purple": "textures/entity/svaos_car/svaos_car_purple",
-				"blue": "textures/entity/svaos_car/svaos_car_blue",
-				"brown": "textures/entity/svaos_car/svaos_car_brown",
-				"green": "textures/entity/svaos_car/svaos_car_green",
-				"red": "textures/entity/svaos_car/svaos_car_red"
+				"black": "textures/entity/svea_oss_car/svea_oss_car_black",
+				"white": "textures/entity/svea_oss_car/svea_oss_car_white",
+				"orange": "textures/entity/svea_oss_car/svea_oss_car_naranja",
+				"magenta": "textures/entity/svea_oss_car/svea_oss_car_magenta",
+				"light_blue": "textures/entity/svea_osscar_/svea_oss_car_light_blue",
+				"yellow": "textures/entity/svea_oss_car/svea_oss_car_yellow",
+				"lime": "textures/entity/svea_oss_car/svea_oss_car_lime",
+				"pink": "textures/entity/svea_oss_car/svea_oss_car_pink",
+				"gray": "textures/entity/svea_oss_car/svea_oss_car_grey",
+				"silver": "textures/entity/svea_oss_car/svea_oss_car_light_gray",
+				"cyan": "textures/entity/svea_oss_car/svea_oss_car_cyan",
+				"purple": "textures/entity/svea_oss_car/svea_oss_car_purple",
+				"blue": "textures/entity/svea_oss_car/svea_oss_car_blue",
+				"brown": "textures/entity/svea_oss_car/svea_oss_car_brown",
+				"green": "textures/entity/svea_oss_car/svea_oss_car_green",
+				"red": "textures/entity/svea_oss_car/svea_oss_car_red"
 			},
 			"spawn_egg": {
 				"texture": "car",
 				"texture_index": 0
 			},			
 			"animations": {
-				"door_close": "animation.svaos_car.door_close",
-				"vehicle_door": "animation.svaos_car.vehicle_door",
-				"open": "animation.svaos_car.door_open",
-				"move": "animation.svaos_car.move",
-				"look_at_target_car": "animation.svaos_car.look_at_target",
-				"wipe": "animation.svaos_car.wipe"
+				"door_close": "animation.svea_oss_car.door_close",
+				"vehicle_door": "animation.svea_oss_car.vehicle_door",
+				"open": "animation.svea_oss_car.door_open",
+				"move": "animation.svea_oss_car.move",
+				"look_at_target_car": "animation.svea_oss_car.look_at_target",
+				"wipe": "animation.svea_oss_car.wipe"
 			},
 			"scripts": {
 				"animate": [
@@ -60,7 +60,7 @@
 				]
 			},
 			"render_controllers": [
-				"controller.render.svaos_car_16_colors"
+				"controller.render.svea_oss_car_16_colors"
 			]
 		}
 	}

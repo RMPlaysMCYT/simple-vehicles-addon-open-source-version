@@ -2,7 +2,7 @@
 	"format_version": "1.8.0",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "svaos:ae86",
+			"identifier": "svea_oss:ae86",
 			"materials": {
 				"default": "entity_alphatest"
 			},
@@ -29,7 +29,7 @@
 				}
 			],
 			"render_controllers": [
-				"controller.render.ae86_svaos"
+				"controller.render.ae86_svea_oss"
 			]
 		}
 	}

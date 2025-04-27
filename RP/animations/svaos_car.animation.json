@@ -1,7 +1,7 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-				"animation.svaos_car.door_open": {
+				"animation.svea_oss_car.door_open": {
 			"loop": "hold_on_last_frame",
 			"animation_length": 1,
 			"bones": {
@@ -55,7 +55,7 @@
 				}
 			}
 		},
-		"animation.svaos_car.move": {
+		"animation.svea_oss_car.move": {
 			"loop": true,
 			"animation_length": 1,
 			"bones": {
@@ -73,7 +73,7 @@
 				}
 			}
 		},
-		"animation.svaos_car.turning": {
+		"animation.svea_oss_car.turning": {
 			"loop": true,
 			"bones": {
 				"wheel0A": {
@@ -84,7 +84,7 @@
 				}
 			}
 		},
-		"animation.svaos_car.vehicle_door": {
+		"animation.svea_oss_car.vehicle_door": {
 			"loop": true,
 			"bones": {
 				"door2": {
@@ -121,7 +121,7 @@
 				}
 			}
 		},
-		"animation.svaos_car.door_close": {
+		"animation.svea_oss_car.door_close": {
 			"loop": "hold_on_last_frame",
 			"animation_length": 1,
 			"bones": {
@@ -175,7 +175,7 @@
 				}
 			}
 		},
-		"animation.svaos_car.wipe": {
+		"animation.svea_oss_car.wipe": {
 			"loop": true,
 			"animation_length": 1,
 			"bones": {

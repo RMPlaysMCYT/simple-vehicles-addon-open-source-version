@@ -9,11 +9,7 @@
 			0
 		],
 		"uuid": "096839ca-21c6-4334-81c6-64b40802e1fc",
-		"min_engine_version": [
-			1,
-			16,
-			100
-		]
+		"min_engine_version": [ 1, 20, 50 ]
 	},
 	"modules": [
 		{

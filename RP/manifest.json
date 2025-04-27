@@ -1,17 +1,25 @@
 {
-    "format_version": 2,
-    "header": {
-        "name": "Simple Vehicles Addon Open-source Version 1.0.0 Pack 1 [Resource Pack]",
-		"description": "This addon add lots of vehicles in minecraft created by RMPlaysMC YT and the community",
-        "version": [ 1, 0, 0 ],
-        "uuid": "2042f565-dffd-443c-883e-35ca05c90699",
-        "min_engine_version": [ 1, 16, 100 ]
-    },
-    "modules": [{ "type": "resources", "uuid": "54888d58-4ca3-408f-bee8-1ca6eec29e32", "version": [ 1, 0, 0 ]}],
-    "dependencies": [{ "uuid": "096839ca-21c6-4334-81c6-64b40802e1fc", "version": [ 1, 0, 0 ]}],
-    "metadata": {
-        "authors": [ "RMPlaysMC YT" ],
-        "license": "GPL-3.0 License",
-        "generated_with": { "bridge": [ "2.1.1", "2.1.2", "2.1.5" ]}
+  "format_version": 2,
+  "header": {
+    "name": "Simple Vehicles Addon Open-source Version 1.0.0 Pack 1 [Resource Pack]",
+    "description": "This addon add lots of vehicles in minecraft created by RMPlaysMC YT and the community",
+    "version": [1, 0, 0],
+    "uuid": "2042f565-dffd-443c-883e-35ca05c90699",
+    "min_engine_version": [1, 20, 50]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "54888d58-4ca3-408f-bee8-1ca6eec29e32",
+      "version": [1, 0, 0]
     }
+  ],
+  "dependencies": [
+    { "uuid": "096839ca-21c6-4334-81c6-64b40802e1fc", "version": [1, 0, 0] }
+  ],
+  "metadata": {
+    "authors": ["RMPlaysMC YT"],
+    "license": "GPL-3.0 License",
+    "generated_with": { "bridge": ["2.1.1", "2.1.2", "2.1.5"] }
+  }
 }

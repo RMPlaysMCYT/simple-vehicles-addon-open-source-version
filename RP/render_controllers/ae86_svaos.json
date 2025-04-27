@@ -1,7 +1,7 @@
 {
 	"format_version": "1.8.0",
 	"render_controllers": {
-		"controller.render.ae86_svaos": {
+		"controller.render.ae86_svea_oss": {
 			"geometry": "geometry.default",
 			"materials": [
 				{
