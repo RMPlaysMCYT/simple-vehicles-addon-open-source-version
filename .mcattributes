@@ -1,2 +1,3 @@
 
 diagnostic.disable.behaviorpack.item.components.deprecated=true
+diagnostic.disable.minecraft.manifest.module.missing=true
